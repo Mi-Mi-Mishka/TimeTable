@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Source+Sans+Pro:wght@300&display=swap');
+body {
+  background-color: cornflowerblue;
+}
+
+.back {
+background-color: azure;
+}
+
+.weekday {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 5%;
+  } 
+  
+  .month {
+    font-family: 'Rubik', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  gap: 5px;
+  }
+
+  .month :first-child {
+    grid-column: 7;
+  }
+
+  .month div:hover {
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+    transition: 0.2ms;
+    }
+
+  .day, .thisMonth {
+    font-size: 2rem;
+    border-radius: 50%;
+  }
+
+  .wday {
+    background-color: blue;
+    color: white;
+  }
+  
+  .night {
+    background-color: #7B001C;
+    color: white;
+  }
+
+  .drop {
+    height: 80vh;
+  }
+
+  .reset {
+    top:unset;
+    bottom: unset;
+  }
+
+  .fontBg {
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .fontMd {
+    font-size: large;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
